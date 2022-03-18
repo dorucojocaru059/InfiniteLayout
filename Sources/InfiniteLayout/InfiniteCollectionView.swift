@@ -181,7 +181,7 @@ extension InfiniteCollectionView: UICollectionViewDelegate {
         self.infiniteLayout.loopCollectionViewIfNeeded()
     }
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         delegateProxy.delegate?.scrollViewDidScroll?(scrollView)
         self.updateLayoutIfNeeded()
     }
